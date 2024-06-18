@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:GridLayoutIssueSample"
+             xmlns:sys="clr-namespace:System;assembly=mscorlib"
+             x:Class="GridLayoutIssueSample.MainPage">
+    <Grid
+        RowDefinitions="Auto, *"
+        ColumnDefinitions="*, Auto"
+        BackgroundColor="LightPink">
+        <Border 
+            Grid.Row="0"
+            Stroke="Black"
+            StrokeThickness="2"
+            Margin="2">
+            <Label VerticalOptions="Fill" HeightRequest="250" Text="Label with height 250" BackgroundColor="LightBlue"/>
+        </Border>
+        <VerticalStackLayout 
+            Grid.Row="1" 
+            BackgroundColor="Lavender"
+            Spacing="24"
+            VerticalOptions="Fill">
+            <Label Text="Grid row 1, column 0 with height set to *, and width set to *"/>
+            <Label Text="2"/>
+            <Label Text="3"/>
+            <Label Text="4"/>
+            <Label Text="5"/>
+            <Label Text="6"/>
+            <Label Text="7"/>
+            <Label Text="8"/>
+            <Label Text="9"/>
+            <Label Text="10"/>
+            <Label Text="11"/>
+            <Label Text="12"/>
+            <Label Text="13"/>
+            <Label Text="14"/>
+            <Label Text="15"/>
+        </VerticalStackLayout>
+        <Label Grid.Column="1" Text="Label with width set to 100" WidthRequest="100"/>
+    </Grid>
+
+</ContentPage>
